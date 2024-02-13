@@ -1,17 +1,51 @@
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Consolas';
+    background-color: #262025;
 }
 
 a, .btn-link {
-    color: #006bb7;
+    color: #e430e1;
 }
-
+p{
+    color: white;
+}
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.test {
+  height: 160px;
+  width: 170px;
+  -webkit-clip-path: url(#shape);
+  clip-path: url(#shape);
+}
+.gradient-container{
+    display: grid;
+}
+.main-header{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.gradient-text{
+  background-image: linear-gradient(to right, pink, violet);
+  background-clip: text;
+  color: transparent;
+}
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
 }
-
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  } 
+.filter-pink{
+    filter: invert(88%) sepia(53%) saturate(2634%) hue-rotate(277deg) brightness(98%) contrast(96%);
+}
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
