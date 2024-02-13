@@ -3,7 +3,22 @@
 <div>
     <main>
         <div class="top-row px-4">
-            <a href="https://github.com/Spizzy1"><img src="Images/github_icon.svg" class="filter-pink center-image" width="80" height="80"/></a>
+            <span style="display: flex; justify-content: center">
+                <a href="/Qualifications">Qualifications</a>&nbsp;|&nbsp;
+                <a href="/Projects">Projects</a>&nbsp;|&nbsp;
+            </span>
+            <div  style="max-height: 100%; max-width 100%; display: flex; position: relative; aspect-ratio : 1 / 1;">
+                <Scrollbutton scrollID="Home">
+                    <ChildContent>
+                        <img src="Images/favicon.png" class="fit-image-animated">
+                    </ChildContent>
+                </Scrollbutton>
+            </div>
+            <span style="display: flex; justify-content: center">
+                &nbsp;|&nbsp;
+                <Scrollbutton scrollID="aboutme" text="About Me"></Scrollbutton>&nbsp;|&nbsp;
+                <a href="/Contact">Contact Info</a>
+            </span>
         </div>
 
         <article class="content px-4">

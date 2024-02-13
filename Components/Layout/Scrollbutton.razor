@@ -1,0 +1,11 @@
+
+<button onclick="document.getElementById('@scrollID').scrollIntoView({behavior:'smooth'})"><div>@text @ChildContent</div></button>
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    [Parameter]
+    public string text {get; set;}
+    [Parameter]
+    public string scrollID {get; set;}
+}

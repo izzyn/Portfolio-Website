@@ -6,12 +6,27 @@ html, body {
 a, .btn-link {
     color: #e430e1;
 }
-p{
+a:hover{
+    color: rgb(228, 138, 213);
+}
+p, li{
     color: white;
+}
+span{
+    color:white;
 }
 .parent{
     display: grid;
     grid-template-columns: 1fr 3fr;
+}
+.home-links{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+}
+.break{
+    size: 1rem;
+    margin: 0rem;
 }
 .test {
   height: 160px;
@@ -24,11 +39,25 @@ p{
 }
 .main-header{
     margin: auto;
+    margin-top: 10%;
     width: 50%;
-    padding: 10px;
+    padding: 20px;
+}
+.fit-image-animated{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: transform 0.0s; 
+}
+.fit-image-animated:hover{
+    transform: rotate(360deg);  
+    transition: transform 1s ease;          
+}
+@keyframes rotate360 {
+    to { transform: rotate(360deg); }           
 }
 .gradient-text{
-  background-image: linear-gradient(to right, pink, violet);
+  background-image: linear-gradient(to right, violet, pink);
   background-clip: text;
   color: transparent;
 }
@@ -43,6 +72,10 @@ p{
     margin-right: auto;
     width: 50%;
   } 
+hr{
+    border-top: 8px solid violet;
+    border-radius: 5px;
+}
 .filter-pink{
     filter: invert(88%) sepia(53%) saturate(2634%) hue-rotate(277deg) brightness(98%) contrast(96%);
 }
