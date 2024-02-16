@@ -1,5 +1,5 @@
 
-<button class="button-text" onclick="document.getElementById('@scrollID').scrollIntoView({behavior:'smooth'})">@ChildContent</button>
+<button class="button-text" onclick="window.scrollTo({top: document.getElementById('@scrollID').getBoundingClientRect().top + window.pageYOffset -10, behaviour: 'smooth'})">@ChildContent</button>
 
 @code{
     [Parameter]

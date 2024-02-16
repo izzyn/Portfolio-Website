@@ -1,8 +1,49 @@
-<img src=@ImageLink>
-
+<style>
+    .testing{
+        background-color: #382735;
+        border: 1px solid transparent !important;
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+    .github-project-link:hover{
+        text-decoration: none;
+    }
+    .github-project-link{
+        text-decoration: none;
+    }
+    .github-project-link:hover .github-link-text{
+        text-decoration: underline;
+        color: #f5a2da;
+    }
+    
+</style>
+<div class="testing" style="position: relative;">
+    <div style="height: auto;">
+        <h2 style="position: relative; color: violet; font-weight: bold;">
+            @Title
+        </h2>
+        <hr>
+        <p style="font-size: 20px; color: #6b676a;"> @Tags</p>
+        <a href=@GithubLink style="display:inline-flex" class="github-project-link"><img src="Images/github_icon.svg" style="display: inline; vertical-align: baseline;" class="filter-pink center-image" width="20" height="20"/>&nbsp;<p class="github-link-text">Github</p></a>
+    </div>
+    <br>
+    <img src=@ImageLink style="width:100%; height:auto;">
+    <p>
+        @Desc
+    </p>
+</div>
 @code{
     [Parameter]
-    public RenderFragment ChildContent { get; set; }
+    public RenderFragment? ChildContent { get; set; }
     [Parameter]
-    public string ImageLink {get; set;}
+    public string? ImageLink {get; set;}
+    [Parameter]
+    public string? Title {get; set;}
+    [Parameter]
+    public string? Tags {get; set;}
+
+    [Parameter]
+    public string? Desc {get; set;}
+    [Parameter]
+    public string? GithubLink {get; set;}
 }
