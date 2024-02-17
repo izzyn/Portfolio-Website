@@ -1,0 +1,29 @@
+<div style="display: grid; border: 1px solid pink !important;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        margin-bottom: 1em;
+        ">
+    <h4 style="color: pink;">@Skill</h4>
+    <div style="display: inline-flex">
+        <img src="Images/clock.svg"  style="display: inline; vertical-align: baseline;" class="filter-pink" width="20" height="20">
+        &nbsp;<p>Time: @TimeSpent</p>
+    </div>
+    <div style="display: inline-flex">
+        <img src="Images/tools.svg" style="display: inline; vertical-align: baseline;" class="filter-pink" width="20" height="20">
+        &nbsp;<p>Experience: @Experience</p>
+    </div>
+    <p>
+        @Desc
+    </p>
+</div>
+
+@code{
+    [Parameter]
+    public string? Skill {get; set;}
+    [Parameter]
+    public string? Experience {get; set;}
+    [Parameter]
+    public string? TimeSpent {get; set;}
+    [Parameter]
+    public string? Desc {get; set;}
+}

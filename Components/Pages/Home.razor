@@ -21,7 +21,7 @@
 </div>
 <div id="Projects"></div>
 <hr>
-<h1 class="gradient-text", style="font-weight: bold">Projects</h1>
+<h1 class="gradient-text" style="font-weight: bold">Projects</h1>
 <br>
 <div style=" display: grid; column-gap: 2rem; row-gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr));">
     <ProjectCard 
@@ -35,7 +35,7 @@
     ImageLink="Images/Unity_OOUz6bVZhS.gif" 
     Title="Unity Bullethell Engine"
     Tags="C#, Unity, Gamedev, frameworks" 
-    Desc="A bullethell demo made in unity uses a highly modified attack editor which lets you create a lot of varying attacks. From splitting bullets to lasers to attacks that only trigger at certain HP thresholds."
+    Desc="A bullethell demo made in unity uses a highly modifiable attack editor which lets you create a lot of varying attacks. From splitting bullets to lasers to attacks that only trigger at certain HP thresholds."
     GithubLink="https://github.com/Spizzy1/Descent-into-bullet-hell"
     ></ProjectCard>
     <ProjectCard 
@@ -46,8 +46,94 @@
     GithubLink="https://github.com/Spizzy1/space-invaders-but-better"
     ></ProjectCard>
 </div>
-<p id="About Me">
+<hr>
+<h1 class="gradient-text" id="Qualifications" style="font-weight: bold">Qualifications</h1>
+<br>
+<h2 style="color: violet;">Official</h2>
+<p>These are technologies which I have used in schoolwork/other official work actively</p>
+<div style="display: grid; column-gap: 1em; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: minmax(100px, auto);">
+<ExperienceCard 
+Skill="C#" 
+TimeSpent="2-4 Years" 
+Experience="Good" 
+Desc="My go to language, I am most experienced with C# and I have written most of my long-term projects in it.">
+</ExperienceCard>
+<ExperienceCard 
+Skill="Unity" 
+TimeSpent="1-2 Years" 
+Experience="Moderate" 
+Desc="Used to be my number one tool for gamedev, have sinced switched over to godot. I still have good experience with it as a tool and could see it being my favored engine for bigger projects.">
+</ExperienceCard>
+<ExperienceCard 
+Skill="Godot" 
+TimeSpent="1" 
+Experience="Moderate" 
+Desc="My current main tool for gamedev, used primarily since I work on solo projects and its fast iteration speed lets me experiment a lot with new technologies, algorithms and ideas.">
+</ExperienceCard>
+<ExperienceCard 
+Skill="GDScript" 
+TimeSpent="1 Year" 
+Experience="Sub-Par" 
+Desc="Used primarily for prototyping in godot, have written some larger godot codebases in it, but I still default to C# with godot mono for larger projects.">
+</ExperienceCard>
+<ExperienceCard 
+Skill="Network architecture" 
+TimeSpent="1 Year" 
+Experience="Know abit, have a lot to learn" 
+Desc="My favorite part about game-dev, very big subject with tons of different approaches. Integrating online multiplayer is something I try to do in most of my bigger scale modern projects, I am very interested and would say I know quite abit about different protocols and best practices. However I am also certain that there is so much more to learn about the topic.">
+</ExperienceCard>
+<ExperienceCard 
+Skill="Blazor" 
+TimeSpent="This website" 
+Experience="Know very little" 
+Desc="My first experience with front-end web development. This website makes extensive use of the blazor component system (To make these cards for example!).">
+</ExperienceCard>
+<ExperienceCard 
+Skill="CSS, HTML and Javascript" 
+TimeSpent="This website" 
+Experience="Know very little" 
+Desc="The trifecta of front-end web development! Made this website with these as my first real website project, have experimented a little with it before (Learning the very basics of HTML structuring and CSS classes). It's a mixed bag, but it's nice learning how to structure things to make things look good.">
+</ExperienceCard>
+<ExperienceCard 
+Skill="GDShader/GLSL" 
+TimeSpent="<1 Year" 
+Experience="Moderate" 
+Desc="Used for writing shader code, I grouped them into one category due to their similarities in purpose and syntax. Have used them together with some basic shader coding principles and knowledge of trigonometry to create spirals, blurr effects and cool magic effects for video game projects. It's great to learn a tool that lets you write pretty and performace-saving code, it's a tool that I will be pushing to learn more of in the future.">
+</ExperienceCard>
+</div>
+<h2 style="color: violet;">Amateur</h2>
+<p>These are technologies and tools which I have learnt without traditional education/do on my free time. Some of these I am more comfortable with than some of the official skill, but there is merit to having done it in an official setting, thus the destinction.</p>
+<div style="display: grid; column-gap: 1em; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: minmax(100px, auto);">
+<ExperienceCard 
+Skill="Python" 
+TimeSpent="4 (Arguably 6) Years" 
+Experience="Good" 
+Desc="First language I ever tried programming with before starting to get into software development. Nowadays I have used it for data processing, making a discord bot, making tools with openAIs API and other day-to-day automation tasks like mathematics and web-scraping.">
+</ExperienceCard>
+<ExperienceCard 
+Skill="Rust" 
+TimeSpent="<1 Year" 
+Experience="Little" 
+Desc="Have made some basic CLI tools/games with rust. Not very experience and there's some really interesting design philosophy behind it which I am eager to learn more about. This is currently the language that I am most excited to learn on its own during my free time.">
+</ExperienceCard>
+<ExperienceCard 
+Skill="C++" 
+TimeSpent="1 Year" 
+Experience="Moderate" 
+Desc="Have made a very basic implementation of WFC and a cipher in C++. A good language to have in your toolbelt, but not something I am comfortable with saying I 'Know' yet, more than happy to learn though!">
+</ExperienceCard>
+<ExperienceCard 
+Skill="SQL" 
+TimeSpent="<1 Year" 
+Experience="Little" 
+Desc="Made a database for the python discord bot which uses the traditional relational database structure to make an expandable and well designed structure. I do know that there are a lot of tricks within database structuring that I do not know of yet, but much like network architecture I really enjoy working with the inner workings of it and I am eager to learn more.">
+</ExperienceCard>
+</div>
+<hr>
+<h1 class="gradient-text" id="About Me" style="font-weight: bold">About Me</h1>
+<p style="font-size: 20px;">
     I'm a 17 year old developer from Sweden, currently pursuing higher education. 
     I've been developing using various tools for roughly <b>2-4 years</b> mainly making various video game demos and fun side projects.
-    I would describe myself as a <b>dedicated problem solver</b>   
+    I would describe myself as a <b>dedicated problem solver</b> and I find that one of the greatest joys of life is thinking, breaking down and reverese engineering big problems in to solvable pieces. 
+    My passions lie within data infrastructure, writing frameworks and generally all that goes on in the background to make sure that the tools that other developers use are as <b>easy to use, efficient and powerful as possible</b>. 
 </p>
